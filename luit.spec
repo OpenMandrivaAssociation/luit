@@ -1,6 +1,6 @@
 Name: luit
-Version: 1.0.1
-Release: %mkrel 4
+Version: 1.0.2
+Release: %mkrel 1
 Summary: Locale and ISO 2022 support for Unicode terminals
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -21,8 +21,9 @@ encoding.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir} --with-localealiasfile=%{_datadir}/X11/locale/locale.dir
+%configure2_5x	--x-includes=%{_includedir} \
+		--x-libraries=%{_libdir} \
+		--with-localealiasfile=%{_datadir}/X11/locale/locale.dir
 
 %make
 
@@ -30,18 +31,11 @@ encoding.
 rm -rf %{buildroot}
 %makeinstall_std
 
-# for compatibility
-mkdir -p %{buildroot}/usr/X11R6/bin
-ln -s ../../bin/luit %{buildroot}/usr/X11R6/bin/luit
-
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %{_bindir}/luit
-%{_mandir}/man1/luit.1x.bz2
-# compatibility link, needed as long as xterm looks there
-/usr/X11R6/bin/luit
-
+%{_mandir}/man1/luit.1*
 
