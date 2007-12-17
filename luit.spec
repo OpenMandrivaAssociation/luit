@@ -5,7 +5,6 @@ Summary: Locale and ISO 2022 support for Unicode terminals
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libfontenc-devel >= 1.0.1
 BuildRequires: libx11-devel >= 1.0.0
