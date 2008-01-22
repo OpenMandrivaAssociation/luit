@@ -1,15 +1,15 @@
 Name: luit
 Version: 1.0.2
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Locale and ISO 2022 support for Unicode terminals
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libfontenc-devel >= 1.0.1
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros	>= 1.1.5
+BuildRequires: libfontenc-devel	>= 1.0.4
+BuildRequires: libx11-devel	>= 1.1.3
 
 %description
 Luit is a filter that can be run between an arbitrary application and a UTF-8
