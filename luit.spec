@@ -1,5 +1,5 @@
 Name: luit
-Version: 1.0.5
+Version: 1.1.0
 Release: %mkrel 1
 Summary: Locale and ISO 2022 support for Unicode terminals
 Group: Development/X11
