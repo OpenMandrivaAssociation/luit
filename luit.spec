@@ -1,11 +1,10 @@
 Name: luit
-Version: 1.1.0
-Release: %mkrel 2
+Version: 1.1.1
+Release: 1
 Summary: Locale and ISO 2022 support for Unicode terminals
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libfontenc-devel >= 1.0.1
 BuildRequires: libx11-devel >= 1.0.0
@@ -28,14 +27,9 @@ encoding.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/luit
 %{_mandir}/man1/luit.1*
 
