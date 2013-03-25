@@ -10,6 +10,8 @@ BuildRequires: libfontenc-devel >= 1.0.1
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
 
+Patch0:		aarch64.patch
+
 %description
 Luit is a filter that can be run between an arbitrary application and a UTF-8
 terminal emulator. It will convert application output from the locale's
@@ -18,6 +20,7 @@ encoding.
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
 %configure2_5x	--x-includes=%{_includedir} \
