@@ -6,8 +6,8 @@ Group: Development/X11
 Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 
-BuildRequires: libfontenc-devel >= 1.0.1
-BuildRequires: libx11-devel >= 1.0.0
+BuildRequires: pkgconfig(fontenc) >= 1.0.1
+BuildRequires: pkgconfig(x11) >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
 
 Patch0:		aarch64.patch
