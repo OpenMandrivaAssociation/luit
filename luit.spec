@@ -1,7 +1,7 @@
 Summary:	Locale and ISO 2022 support for Unicode terminals
 Name:		luit
 Version:	1.1.1
-Release:	3
+Release:	4
 Group:		Development/X11
 License:	MIT
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
