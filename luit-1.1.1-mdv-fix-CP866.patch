@@ -1,0 +1,10 @@
+--- luit-1.1.1/charset.c	2012-03-23 05:23:07.000000000 +0100
++++ luit-1.1.1-new/charset.c	2013-01-11 11:04:25.926000000 +0100
+@@ -441,6 +441,7 @@
+     {"ISO8859-15", 0, 2, "ASCII", NULL,         "ISO 8859-15",   NULL,         NULL},
+     {"ISO8859-16", 0, 2, "ASCII", NULL,         "ISO 8859-16",   NULL,         NULL},
+     {"KOI8-R",     0, 2, "ASCII", NULL,         "KOI8-R",        NULL,         NULL},
++     {"CP866", 0, 2, "ASCII", NULL, "CP 866", NULL, NULL},
+     {"CP1251",     0, 2, "ASCII", NULL,         "CP 1251",       NULL,         NULL},
+     {"TCVN",       0, 2, "ASCII", NULL,         "TCVN",          NULL,         NULL},
+     {"eucCN",      0, 1, "ASCII", "GB 2312",    NULL,            NULL,         NULL},

@@ -1,0 +1,11 @@
+--- luit-1.1.1/sys.c.orig	2013-08-24 16:22:36.333741272 -0400
++++ luit-1.1.1/sys.c	2013-08-24 16:22:56.054247647 -0400
+@@ -20,6 +20,8 @@
+ THE SOFTWARE.
+ */
+ 
++#define _XOPEN_SOURCE 600
++
+ #ifdef HAVE_CONFIG_H
+ # include "config.h"
+ #endif

@@ -5,7 +5,8 @@ Release:	6
 Group:		Development/X11
 License:	MIT
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-Patch0:		aarch64.patch
+Patch0:         luit-1.1.1-mdv-fix-CP866.patch
+Patch1:         luit-1.1.1-posix_openpt.patch
 
 BuildRequires:	pkgconfig(fontenc) >= 1.0.1
 BuildRequires:	pkgconfig(x11) >= 1.0.0
